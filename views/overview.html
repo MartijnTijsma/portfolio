@@ -1,0 +1,18 @@
+<div>
+    <div id="hero-image">
+        <div class="subtitle">DESIGN + CODE</div>
+    </div>
+    <div class="projects">
+        <p>{{intro}}</p>
+        <div ng-repeat="group in groups" class="group">
+            <h3>{{group.name}}</h3>
+            <p>{{group.description}}</p>
+            <div ng-repeat="project in group.projects">
+                <h4>{{project.name}}</h4>
+                <div ng-repeat="image in project.images" class="col-xs-12 col-sm-6 col-md-4">
+                    <img ng-src="{{image.source}}" alt="{{image.name}}" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

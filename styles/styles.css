@@ -1,7 +1,9 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
 }
+
 
 .content {
     background-color: #ffffff;
@@ -12,19 +14,27 @@ html, body {
     margin: 0;
     background: linear-gradient(to right, rgba(54, 111, 255, .75), rgba(226, 73, 216, .75));
     border-radius: 0;
-    min-height: 40px;
     border: none;
 }
 
 #header-navbar .top-header {
     margin: 0;
-    padding: 0;
+    padding: 5px 10px;
 }
 
 .brand {
-    float:left;
-    margin: 10px 20px 10px 10px;
     color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.subtitle {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #f3f3f3;
+    float: left;
+    clear: both;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 #header-navbar ul.nav.navbar {
@@ -68,6 +78,29 @@ html, body {
 
 }
 
+#hero-image{
+    position: relative;
+    background: url("/images/coffeeshop.png") center no-repeat;
+    height: 400px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 20px;
+}
+
+#hero-image .subtitle {
+    color: white;
+    float: none;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
 .images-panel {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -108,4 +141,23 @@ html, body {
     text-align: center;
     font-weight: bold;
     font-size: 1.2em;
+}
+
+
+.projects h3,
+.projects h4 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+}
+
+.projects .group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 768px){ /* phones */
+    #hero-image {
+        height: 200px;
+        background: url("/images/coffeeshop-small.png") center no-repeat;
+    }
 }
