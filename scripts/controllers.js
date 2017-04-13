@@ -31,12 +31,14 @@ angular.module('playApp')
 })
 .controller('OverviewCtrl', function($scope, $http){
     console.log('OverviewCtrl');
-    $scope.intro = "";
+    $scope.intro = [];
     $scope.groups = [];
-    $http.get('projects.json').success(function(data){
-        console.log("loaded projects");
-        $scope.intro = data.intro;
-        $scope.groups = data.groups;
+    $http.get('projects.json').then(function(response){
+        if(response.data){
+            console.log("loaded projects", response.data);
+            $scope.intro = response.data.intro;
+            $scope.groups = response.data.groups;
+        }
     });
 })
 .controller('AboutCtrl', function($scope){
