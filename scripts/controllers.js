@@ -33,6 +33,8 @@ angular.module('playApp')
     console.log('OverviewCtrl');
     $scope.intro = [];
     $scope.groups = [];
+    $scope.selectedProjectName = null;
+    $scope.selectedImage = null;
     $http.get('projects.json').then(function(response){
         if(response.data){
             console.log("loaded projects", response.data);
@@ -40,6 +42,22 @@ angular.module('playApp')
             $scope.groups = response.data.groups;
         }
     });
+
+    $scope.selectProject = function(name, image){
+        if($scope.selectedImage && $scope.selectedImage.name === image.name){
+            //deselect
+            $scope.selectedProjectName = null;
+            $scope.selectedImage = null;
+        } else {
+            $scope.selectedProjectName = name;
+            $scope.selectedImage = image;    
+        }
+    }
+
+    $scope.deselectImage = function(){
+        $scope.selectedProjectName = null;
+        $scope.selectedImage = null;
+    }
 })
 .controller('AboutCtrl', function($scope){
     console.log('About me');

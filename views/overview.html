@@ -9,11 +9,16 @@
             <p>{{group.description}}</p>
             <div ng-repeat="project in group.projects" class="project">
                 <h4>{{project.name}}</h4>
+                <p ng-if="project.description" ng-repeat="line in project.description">{{line}}</p>
                 <div class="project-images">
-                    <div ng-repeat="image in project.images" class="project-image">
-                        <img ng-src="{{image.source}}" alt="{{image.name}}" class="">
+                    <div ng-repeat="image in project.images" class="project-image" ng-click="selectProject(project.name, image)">
+                        <img ng-src="{{image.thumb}}" alt="{{image.name}}" class="pointer">
                     </div>
                     <div class="clearfix"></div>
+                    <div ng-if="selectedProjectName==project.name && selectedImage" class="selected-image pointer" ng-click="deselectImage()">
+                        <img ng-src="{{selectedImage.source}}" alt="{{image.name}}">
+                        <p>{{image.description}}</p>
+                    </div>
                 </div>
             </div>
         </div>

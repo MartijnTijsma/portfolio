@@ -10,37 +10,51 @@
         "description": "jdnckndslc lsdkncnsdlcnsd nddlcndscnd",
         "projects": [{
             "name": "Livind",
+            "description": [
+                "Livind is het zorg-initiatief van Adésys. Livind is een webapplicatie voor mantelzorgers en zorg-professionals welke inzicht geeft in het leefpatroon van zorgbehoevenden. Dit hulpmiddel zorgt ervoor dat mensen langer zelfstandig thuis kunnen blijven wonen. Simpele bewegingssensoren (vergelijkbaar met een beveiligingssysteem) brengen de dagelijkse activiteiten in kaart. Mantelzorgers (vaak de kinderen) en zorgprofessionals (zoals thuiszorgmedewerkers) kunnen inloggen in een beveiligde webapplicatie en o.a. via een tijdlijn inzicht krijgen in de de dagelijkse activiteiten.",
+                "Technieken: HTML, Angular.js, D3, LESS, Node.js, MySQL, REST, PhotoShop, AWS (EC2, RDS, S3, ELB, CloudWatch)"
+            ],
             "images": [{
                 "name": "Livind client day view",
                 "source": "images/livind1.jpeg",
-                "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui." 
+                "thumb": "images/livind1_tn.jpg",
+                "description": "..." 
             },
             {
                 "name": "Livind client trends",
                 "source": "images/livind2.jpeg",
-                "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui."
+                "thumb": "images/livind2_tn.jpg",
+                "description": "..."
             },
             {
                 "name": "Livind status overview",
                 "source": "images/livind3.jpeg",
-                "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui." 
+                "thumb": "images/livind3_tn.jpg",
+                "description": "..." 
             },
             {
                 "name": "Livind client settings",
                 "source": "images/livind4.jpeg",
-                "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui."
+                "thumb": "images/livind4_tn.jpg",
+                "description": "..."
             }]
         },{
             "name": "Meetcentrale",
+            "description": [
+                "Meetcentrale ontsluit en visualiseert informatie opgestuurd vanuit alarmmelders. De klant bepaalt zelf welke sensoren er op de alarmmelder aangesloten worden en configureert op meetcentrale zelf hoe hij de gegevens te zien krijgt. Meetcentrale bestaat uit verschillende componenten (backend, frontend, adapters, queues, dataprocessing en database) en draait volledig in de cloud (AWS).",
+                "Technieken: HTML, Angular.js, D3, CSS, LESS, Node.js, MySQL, REST, PhotoShop, AWS (EC2, RDS, Aurora, S3, ELB, CloudWatch), RabbitMQ"
+            ],
             "images": [{
                 "name": "Meetcentrale.nl dashboard",
                 "source": "images/meetcentrale3.png",
-                "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui." 
+                "thumb": "images/meetcentrale3_tn.jpg",
+                "description": "..." 
             },
             {
                 "name": "Meetcentrale.nl graphs",
                 "source": "images/meetcentrale4.jpeg",
-                "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui."
+                "thumb": "images/meetcentrale4_tn.jpg",
+                "description": "..."
             }]
         }]
     }] 
