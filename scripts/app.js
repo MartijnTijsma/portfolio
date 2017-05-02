@@ -1,4 +1,7 @@
-angular.module('playApp',['ui.router'])
+angular.module('portfolioApp',[
+    'ngAnimate',
+    'ui.router'
+])
 .config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
     

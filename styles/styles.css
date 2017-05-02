@@ -185,6 +185,8 @@ html, body {
     padding: 5px;
     width: 140px;
     height: 140px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .project-image img {
@@ -194,13 +196,99 @@ html, body {
     border-radius: 50%;
 }
 
+.project-image img:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 250px;
+}
+
 .selected-image img{
     width: 100%;
+    box-shadow: 2px 2px 4px #eee;
+}
+
+/*@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes disappear {
+  from { opacity: 1;}
+  to { opacity: 0; }
+}*/
+
+@keyframes appear {
+  from { opacity: 0; max-height: 0; }
+  to { opacity: 1; max-height: 500px; }
+}
+@keyframes disappear {
+  from { opacity: 1; max-height: 500px;}
+  to { opacity: 0; max-height: 0; }
+}
+
+
+
+.selected-image.ng-enter {
+  animation: 2s appear;
+}
+
+.selected-image.ng-leave {
+  animation: 1s disappear;
+}
+
+
+
+.box {
+  margin: 20px auto;
+  background: #5FCF80;
+  width: 150px;
+  height: 150px;
+}
+.circle {
+  transform: rotate(360deg);
+  background: #9351A6;
+  border-radius: 50%;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+}
+.rotate {
+  transition: all 1s ease-in-out;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 @media(max-width: 768px){ /* phones */
     #hero-image {
         height: 200px;
         background: url("/images/coffeeshop-small.png") center no-repeat;
+    }
+
+    .project-image {
+        width: 70px;
+        height: 70px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .project-image img {
+        width: 70px;
+        height: 70px;
     }
 }

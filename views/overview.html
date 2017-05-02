@@ -15,7 +15,7 @@
                         <img ng-src="{{image.thumb}}" alt="{{image.name}}" class="pointer">
                     </div>
                     <div class="clearfix"></div>
-                    <div ng-if="selectedProjectName==project.name && selectedImage" class="selected-image pointer" ng-click="deselectImage()">
+                    <div ng-if="selectedProjectName==project.name && selectedImage" class="selected-image pointer animate" ng-click="deselectImage()">
                         <img ng-src="{{selectedImage.source}}" alt="{{image.name}}">
                         <p>{{image.description}}</p>
                     </div>

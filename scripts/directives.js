@@ -1,4 +1,4 @@
-angular.module('playApp')
+angular.module('portfolioApp')
 .directive('myCustomer', function(){
 	return {
     	template: 'Name: {{customer.name}} Address: {{customer.address}}' 

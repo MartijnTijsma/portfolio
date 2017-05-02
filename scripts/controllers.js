@@ -1,4 +1,4 @@
-angular.module('playApp')
+angular.module('portfolioApp')
 .controller('ApplicationCtrl', function($scope){
     $scope.scrollDown = true;
     $scope.customer = {
@@ -8,26 +8,6 @@ angular.module('playApp')
 })
 .controller('HomeCtrl' , function($scope, $http, $window){
     console.log('Home');
-    $scope.Math = $window.Math;
-    $scope.projects = {};
-    $scope.selectedProject = {
-        index: null
-    };
-    
-    $http.get('projects.json').success(function(data){
-        $scope.projects = data;
-    });
-    
-    console.log(Math.ceil(0.5));
-    
-    $scope.selectProject = function(project, index){
-        if(index == $scope.selectedProject.index){
-            $scope.selectedProject.index = null;
-        } else {
-            $scope.selectedProject = project;
-            $scope.selectedProject.index = index;
-        }
-    }
 })
 .controller('OverviewCtrl', function($scope, $http){
     console.log('OverviewCtrl');
@@ -35,7 +15,8 @@ angular.module('playApp')
     $scope.groups = [];
     $scope.selectedProjectName = null;
     $scope.selectedImage = null;
-    $http.get('projects.json').then(function(response){
+    var unique = new Date().getTime();
+    $http.get('projects.json?'+unique).then(function(response){
         if(response.data){
             console.log("loaded projects", response.data);
             $scope.intro = response.data.intro;
